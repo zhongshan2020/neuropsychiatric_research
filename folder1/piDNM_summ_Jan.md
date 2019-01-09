@@ -8,7 +8,9 @@ Overall Desigin:
 
 Breifly, we compare the counts of DNMs within each coding region against that of synonymous regions for DNM overenrichment estimates. We split the coding genes into several different gene sets according to functional annotations as for relation with human diseases and split the coding regions/sites into disjoint categories. DNM overenrichment estimates were performed for different genesets and different sites and compared. We have tried different ways of gene set and sites spliting, and different enrichment testing methods (supplied if requested), however the results are quite similar as bellow.
 
+
 Methods:
+
 1, To estimate DNM overenrichment on possible post-transcriptional functional sites (including RBPbiding and Ribsnitch sites) and for different mutation effect sites specifically, we split the coding regions into the following 7 main different regions: 
 
 LOF (stop-gain/loss, and consensus splicing sites), 
@@ -33,6 +35,7 @@ The hierachy for overlapping annotations is : LOF, damaging missense, potential 
 
 
 Data:
+
 1, 25,035 SNV DNMs from about 50 neuropsychiatric WES and WGS studies (including ASD, EE, SCZ et al);
 
 2, 9,657,613 and 8,453,935 RBPbinding sites collected from CLIPdb and Starbase2 databases; 
@@ -49,7 +52,9 @@ Data:
 
 8, gene expression in embryonic human brain were obtained from the branspan databases, and mean expression level across genomci regions/developmental stages in the lower 10% were taken as not expressed in brain. 
 
+
 Main results:
+
 DNM enrichment analysis using WES datasets (only several WES datasets with > 500 disease families presented) 
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.WES.dnm.enrich.pdf
@@ -59,6 +64,7 @@ DNM enrichment analysis using WGS datasets (only several WGS datasets with > 500
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.WGS.dnm.enrich.pdf
 
 Figure legends:
+
 a, barplot to show enrichment of DNMs within each genetic region of specific gene sets for each study: x-axis for different regions, and y-axis for overenrichment ratio using synonymous sites as background, the calculation is as bellow:
 
 ratio between #DNM in studied regions/#DNM in synonymous sites and #mr sum in studied regions/#mr sum in synonymous sites for WES dataset; 
@@ -69,7 +75,8 @@ b, 95% confidence interval for overenrichment ratio was marked as vertical line 
 
 c, different bar colors for different genesets, and each figure panel for each study.
 
-Conclusions:
+
+Main Conclusions:
 
 1, As postive control (neuro-function related genesets: TADAFDR0.3 and FMRP_targets_Darnell2011 genesets on the figure), we observed DNM overenrichment especially for LOF, damaging missense mutations in the case samples but much less normal samples, which prove validaty of the data and method used in the analysis. 
 
