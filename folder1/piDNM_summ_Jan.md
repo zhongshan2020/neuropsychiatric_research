@@ -88,7 +88,7 @@ Main Conclusions:
 
 5, In addition, we observed higher DNM overenrichment for potantial splicing sites (predicted by spidex), but not for RNA structure changing sites (RNAsnpM3 and RNAfold).
 
-Overall, we may could prioritize for novel ASD genes using combination of RBP binding sites and LOF, missense mutations.  
+Overall, we may could prioritize for novel ASD genes using combination of RBP binding sites and LOF, missense, splicing mutations.  
 
 Details about Methods and Data could be supplied on request. 
 
