@@ -39,15 +39,15 @@ we can see in general eQ1 show high functional score than others and also contro
 
 3, Enrichment of the eQTL among functional genomic regions compared to control SNPs (SNPsnap simlations) was calculated, the number of regions show significant eQTL enrichment (p<0.01) and total regions tested is listed as bellow: 
 
-eQTL_bins	#Enriched_regions	#Total_regions_tested	Ratio
+eQTL_bins	 #Enriched_regions	 #Total_regions_tested	 Ratio
 
- Q1	50	2845	0.0175
+ Q1	  50	  2845	  0.0175
 
- Q2	35	2845	0.0123
+ Q2	  35	  2845	  0.0123
 
- Q3	38	2845	0.0133
+ Q3	  38	  2845	  0.0133
 
- Q4	33	2846	0.0115
+ Q4	  33	  2846	  0.0115
 
 we can see Q1 (top25%) eQTLs tend to enriched in more regions than others eQTLs
 
