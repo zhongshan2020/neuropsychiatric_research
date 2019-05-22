@@ -41,13 +41,13 @@ we can see in general eQ1 show high functional score than others and also contro
 
 eQTL_bins	#Enriched_regions	#Total_regions_tested	Ratio
 
-Q1	50	2845	0.0175746924428823
+ Q1	50	2845	0.0175
 
-Q2	35	2845	0.0123022847100176
+ Q2	35	2845	0.0123
 
-Q3	38	2845	0.0133567662565905
+ Q3	38	2845	0.0133
 
-Q4	33	2846	0.0115952213633169
+ Q4	33	2846	0.0115
 
 we can see Q1 (top25%) eQTLs tend to enriched in more regions than others eQTLs
 
