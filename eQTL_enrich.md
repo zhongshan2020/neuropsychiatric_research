@@ -54,13 +54,13 @@ eQTL_bins	 #Enriched_regions	 #Total_regions_tested	 Ratio
 
 we can see Q1 (top25%) eQTLs tend to enriched in more regions than others eQTLs
 
- <h1> 4, Prediction of 3'UTR eQTL against common SNPs as control (simulated using SNPsnap, default settings) based on various features using machine learning methods </h1>
+ <h1> 4, Prediction of 3'UTR eQTL against common SNPs using machine learning methods </h1>
 
 <h2> (1), SNP data: </h2>
 
 3,149 eQTL finemapped using DAPG for human brain
 
-66,737 common SNPs matched using SNPsnap
+66,737 common SNPs matched using SNPsnap (default settings)
 
 <h2> (2), features: </h2>
 
@@ -84,20 +84,20 @@ xgb.cv(data = data[,-ind_label], label = data[,ind_label],nthread = 10, nfold = 
 xgboost(data = train[,-ind_label], label = train[,ind_label], nthread = 10, verbose=2, nrounds=20,objective = "binary:logistic")
  
 
-<h2> (4), Analysis 1: Prediction of eQTL/common SNPs using selected features: Phylop_score, CADD, Eigen, and GWAVA_region_score only: </h2>
+<h2> (4), Analysis 1: Prediction of eQTL using common features: Phylop_score, CADD, Eigen, and GWAVA_region_score only: </h2>
 
 AUC of 0.543 obtained 
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.anno.matr.selfeatures.xgboost.auc.pdf
 
 
-<h2> (5), Analysis 2: Prediction of eQTL/common SNPs using all features: </h2>
+<h2> (5), Analysis 2: Prediction of eQTL using all features: </h2>
 
 AUC of 0.776 obtained
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/finemap_eQTL_commonSNPs.anno.matr.xgboost.auc.pdf
 
-<h2> (6), Analysis 3: Prediction of top 25% PIP score eQTL/common SNPs using all features: </h2>
+<h2> (6), Analysis 3: Prediction of eQTL with top 25% PIP score using all features: </h2>
 
 AUC of 0.894 obtained
 
