@@ -19,7 +19,7 @@ Overlap between different datasets, including between FIMO and POSTAR is just ab
 As positive control, we check RBP binding sites overlap between two replicates of eCLIP data, and found 20%-40% overlap
 
 
-2, eQTL split into 4 bins accoring to PIP scores:
+<h1> 2, eQTL split into 4 bins accoring to PIP scores: </h1>
 
 eQ1: top 25%
 
@@ -38,7 +38,9 @@ https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/finem
 we can see in general eQ1 show high functional score than others and also control, and significant in some cases (ANnova p value shown)
 
 
-3, Enrichment of the eQTL among functional genomic regions compared to control SNPs (SNPsnap simlations) was calculated, the number of regions show significant eQTL enrichment (p<0.01) and total regions tested is listed as bellow: 
+<h1> 3, Enrichment of the eQTL among functional genomic regions compared to control SNPs (SNPsnap simlations) </h1> 
+ 
+ the number of regions show significant eQTL enrichment (p<0.01) and total regions tested is listed as bellow: 
 
 eQTL_bins	 #Enriched_regions	 #Total_regions_tested	 Ratio
 
@@ -52,22 +54,21 @@ eQTL_bins	 #Enriched_regions	 #Total_regions_tested	 Ratio
 
 we can see Q1 (top25%) eQTLs tend to enriched in more regions than others eQTLs
 
- 4, 
-Prediction of 3'UTR eQTL against common SNPs as control (simulated using SNPsnap, default settings) based on various features using machine learning methods
+ <h1> 4, Prediction of 3'UTR eQTL against common SNPs as control (simulated using SNPsnap, default settings) based on various features using machine learning methods </h1>
 
-(1), SNP data:
+<h2> (1), SNP data: </h2>
 
 3,149 eQTL finemapped using DAPG for human brain
 
 66,737 common SNPs matched using SNPsnap
 
-(2), features:
+<h2> (2), features: </h2>
 
 9 evolution/selection or other funcional features of prediction scores from many diffent software tools: DeepSea, Phylop, CADD, RNAsnp, Eigen,GWAVA for example.  
 
 2,869 functional genome region annotations including: RBP binding sites and miRNA binding sites for specific RBP or miRNAs, and 3'UTR cis-regulatory elements.
 
-(3), prediction using machinelearning method xgboost, 2 ways to estimate AUC :
+<h2> (3), prediction using machinelearning method xgboost, 2 ways to estimate AUC : </h2>
 
 (a), Cross validation
 
@@ -83,20 +84,20 @@ xgb.cv(data = data[,-ind_label], label = data[,ind_label],nthread = 10, nfold = 
 xgboost(data = train[,-ind_label], label = train[,ind_label], nthread = 10, verbose=2, nrounds=20,objective = "binary:logistic")
  
 
-(4), Analysis 1: Prediction of eQTL/common SNPs using selected features: Phylop_score, CADD, Eigen, and GWAVA_region_score only:
+<h2> (4), Analysis 1: Prediction of eQTL/common SNPs using selected features: Phylop_score, CADD, Eigen, and GWAVA_region_score only: </h2>
 
 AUC of 0.543 obtained 
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.anno.matr.selfeatures.xgboost.auc.pdf
 
 
-(5), Analysis 2: Prediction of eQTL/common SNPs using all features:
+<h2> (5), Analysis 2: Prediction of eQTL/common SNPs using all features: </h2>
 
 AUC of 0.776 obtained
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/finemap_eQTL_commonSNPs.anno.matr.xgboost.auc.pdf
 
-(6), Analysis 3: Prediction of top 25% PIP score eQTL/common SNPs using all features:
+<h2> (6), Analysis 3: Prediction of top 25% PIP score eQTL/common SNPs using all features: </h2>
 
 AUC of 0.894 obtained
 
