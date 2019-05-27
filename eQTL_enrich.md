@@ -68,16 +68,18 @@ we can see Q1 (top25%) eQTLs tend to enriched in more regions than others eQTLs
 
 2,869 functional genome region annotations including: RBP binding sites and miRNA binding sites for specific RBP or miRNAs, and 3'UTR cis-regulatory elements.
 
-<h2> (3), prediction using machinelearning method xgboost, 2 ways to estimate AUC : </h2>
+<h2> (3), prediction using xgboost, 2 ways to estimate AUC : </h2>
 
-(a), Cross validation
+(a), Cross validation:
+
 
 5-fold cross validation on the whole dataset performed to evaluate CV AUC:
  
 xgb.cv(data = data[,-ind_label], label = data[,ind_label],nthread = 10, nfold = 5, nrounds=20,verbose=2,metrics={'auc'},objective = "binary:logistic")
 
 
-(b),train-test
+(b),train-test data split:
+
 
 25% data randomly selected as test, and rest 75% as train, to evaluate prediction efficiency and AUC:  
 
