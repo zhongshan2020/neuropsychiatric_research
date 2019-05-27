@@ -51,4 +51,54 @@ eQTL_bins	 #Enriched_regions	 #Total_regions_tested	 Ratio
 
 we can see Q1 (top25%) eQTLs tend to enriched in more regions than others eQTLs
 
+ 4, 
+Prediction of 3'UTR eQTL against common SNPs as control (simulated using SNPsnap, default settings) based on various features using machine learning methods
+
+(1), SNP data:
+
+3,149 eQTL finemapped using DAPG for human brain
+
+66,737 common SNPs matched using SNPsnap
+
+(2), features:
+
+9 evolution/selection or other funcional features of prediction scores from many diffent software tools: DeepSea, Phylop, CADD, RNAsnp, Eigen,GWAVA for example.  
+
+2,869 functional genome region annotations including: RBP binding sites and miRNA binding sites for specific RBP or miRNAs, and 3'UTR cis-regulatory elements.
+
+(3), prediction using machinelearning method xgboost, 2 ways to estimate AUC :
+
+(a), Cross validation
+
+5-fold cross validation on the whole dataset performed to evaluate CV AUC:
+ 
+xgb.cv(data = data[,-ind_label], label = data[,ind_label],nthread = 10, nfold = 5, nrounds=20,verbose=2,metrics={'auc'},objective = "binary:logistic")
+
+
+(b),train-test
+
+25% data randomly selected as test, and rest 75% as train, to evaluate prediction efficiency and AUC:  
+
+xgboost(data = train[,-ind_label], label = train[,ind_label], nthread = 10, verbose=2, nrounds=20,objective = "binary:logistic")
+ 
+
+(4), Analysis 1: Prediction of eQTL/common SNPs using selected features: Phylop_score, CADD, Eigen, and GWAVA_region_score only:
+
+AUC of 0.543 obtained 
+
+https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.anno.matr.selfeatures.xgboost.auc.pdf
+
+
+(5), Analysis 2: Prediction of eQTL/common SNPs using all features:
+
+AUC of 0.776 obtained
+
+https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/finemap_eQTL_commonSNPs.anno.matr.xgboost.auc.pdf
+
+(6), Analysis 3: Prediction of top 25% PIP score eQTL/common SNPs using all features:
+
+AUC of 0.894 obtained
+
+https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.anno.matr.q1.xgboost.auc.pdf
+
  
