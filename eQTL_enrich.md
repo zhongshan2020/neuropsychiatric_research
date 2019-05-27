@@ -1,6 +1,7 @@
 Fine-mapping eQTL functional enrichment analysis
  
-/b 1, RBP binding sites data statistics /b
+<h1> 1, RBP binding sites data statistics </h1>
+
 RBP binding sites on exons:
 
 7231675 sites for 171 RBPs in  POSTAR
