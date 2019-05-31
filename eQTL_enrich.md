@@ -94,11 +94,9 @@ https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/finem
 
 and prediction and actual result in test dataset:
 
-    Pred0	Pred1
-    
-Obs0	16690 	6
-
-Obs1	769 	  7
+| |Pred0	|Pred1
+|Obs0|	16690| 	6
+|Obs1	|769 |	  7
 
 
 <h2> Prediction of eQTL using common features: Phylop_score, CADD, Eigen, and GWAVA_region_score only: </h2>
