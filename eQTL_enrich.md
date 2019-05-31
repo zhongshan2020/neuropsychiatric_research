@@ -92,6 +92,14 @@ AUC of 0.776, precision-recall AUC: 0.155
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/finemap_eQTL_commonSNPs.anno.matr.xgboost.auc.pdf
 
+and prediction and actual result in test dataset:
+
+    Pred0	Pred1
+    
+Obs0	16690 	6
+
+Obs1	769 	  7
+
 
 <h2> Prediction of eQTL using common features: Phylop_score, CADD, Eigen, and GWAVA_region_score only: </h2>
 
