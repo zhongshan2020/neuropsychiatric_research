@@ -115,6 +115,14 @@ and prediction and actual result in test dataset:
 |Obs0|	16690| 	6|
 |Obs1	|769 |	  7|
 
+same as above, but use balanced dataset:
+
+| |Pred0	|Pred1|
+|---|---|---|
+|Obs0|	473| 362|
+|Obs1	|103 |	 668|
+
+
 <h2> Prediction of eQTL using common features: Phylop_score, CADD, Eigen, and GWAVA_region_score only: </h2>
 
 AUC of 0.543, precision-recall AUC: 0.055 
