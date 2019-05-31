@@ -86,23 +86,58 @@ xgb.cv(data = data[,-ind_label], label = data[,ind_label],nthread = 10, nfold = 
 xgboost(data = train[,-ind_label], label = train[,ind_label], nthread = 10, verbose=2, nrounds=20,objective = "binary:logistic")
  
 
-<h2> (4), Analysis 1: Prediction of eQTL using common features: Phylop_score, CADD, Eigen, and GWAVA_region_score only: </h2>
+<h2>Prediction of eQTL using all features: </h2>
 
-AUC of 0.543 obtained 
+AUC of 0.776, precision-recall AUC: 0.155
+
+https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/finemap_eQTL_commonSNPs.anno.matr.xgboost.auc.pdf
+
+
+<h2> Prediction of eQTL using common features: Phylop_score, CADD, Eigen, and GWAVA_region_score only: </h2>
+
+AUC of 0.543, precision-recall AUC: 0.055 
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.anno.matr.selfeatures.xgboost.auc.pdf
 
 
-<h2> (5), Analysis 2: Prediction of eQTL using all features: </h2>
+<h2> Prediction of eQTL using all features with random outcome label : </h2>
 
-AUC of 0.776 obtained
+AUC of 0.5, precision-recall AUC: 0.049 
 
-https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/finemap_eQTL_commonSNPs.anno.matr.xgboost.auc.pdf
+https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.anno.matr.rand.xgboost.auc.pdf
 
-<h2> (6), Analysis 3: Prediction of eQTL with top 25% PIP score using all features: </h2>
 
-AUC of 0.894 obtained
+<h2> Prediction of eQTL with top 25% PIP score using all features: </h2>
+
+AUC of 0.903, precision-recall AUC: 0.475
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.anno.matr.q1.xgboost.auc.pdf
+
+
+<h2> Prediction of eQTL with top 25-50% PIP score using all features: </h2>
+
+AUC of 0.828, precision-recall AUC: 0.184
+
+https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.anno.matr.q2.xgboost.auc.pdf
+
+
+<h2> Prediction of eQTL with top 50-75% PIP score using all features: </h2>
+
+AUC of 0.788, precision-recall AUC: 0.143
+
+https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.anno.matr.q3.xgboost.auc.pdf
+
+
+<h2> Prediction of eQTL with top 75-100% PIP score using all features: </h2>
+
+AUC of 0.790, precision-recall AUC: 0.108
+
+https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.anno.matr.q4.xgboost.auc.pdf
+
+
+
+
+
+
 
  
