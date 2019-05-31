@@ -85,6 +85,22 @@ xgb.cv(data = data[,-ind_label], label = data[,ind_label],nthread = 10, nfold = 
 
 xgboost(data = train[,-ind_label], label = train[,ind_label], nthread = 10, verbose=2, nrounds=20,objective = "binary:logistic")
  
+<h2> (4) Prediction of eQTL using gboost using various datasets : </h2>
+
+AUC summarry:
+
+|Data|AUC|PR AUC|
+|--|--|--|
+|All feature|0.776|0.155|
+|Selected features|0.543|0.055|
+|Random outcome|0.50|0.049|
+|top Q1 PIP|0.903|0.475|
+|top Q2 PIP|0.828|0.184|
+|top Q3 PIP|0.788|0.143|
+|top Q4 PIP|0.790|0.108|
+
+
+<h2>Appendix: Prediction AUC curvers </h2>
 
 <h2>Prediction of eQTL using all features: </h2>
 
