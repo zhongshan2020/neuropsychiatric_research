@@ -1,4 +1,7 @@
-Prediction of fine-mapping eQTL using xgboost
+<h1> Prediction of fine-mapping eQTL using xgboost </h1>
+
+<h2> Data and methods description </h2>
+
 The trian dataset used same as above, briefly, 3,149 eQTL as positive, and 66,737 common SNPs (matched by SNPsnap) as negative, in total 2,934 features (mainly including RBP bidning, miRNA binding).
 
 The xgboost was used for outcome prediction based on features, using the objective method: "binary:logistic" and loss function metrics: "Precison recall auc", 5-fold CV to estimate performance.
@@ -29,7 +32,7 @@ relationship between PIP score vs Prediction probability:
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.pred.pip.cor.pdf
 
 
-b, PIP score as instance weight for positive (eQTL), and arbitarily chosen 0.01 for negative (common SNPs):
+<h2> b, PIP score as instance weight for positive (eQTL), and arbitarily chosen 0.01 for negative (common SNPs): </h2>
 
 AUC curve:
 
