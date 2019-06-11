@@ -29,7 +29,7 @@ Feature importance (top 200 shown):
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/finemap_eQTL_commonSNPs.anno.matr.xgb_train_featureImportance.aucpr.pdf
 
 
-relationship between PIP score vs Prediction probability:
+relationship between PIP score vs Prediction probability from xgboost :
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.pred.pip.cor.pdf
 
