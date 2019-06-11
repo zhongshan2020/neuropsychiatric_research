@@ -19,8 +19,9 @@ outcome (eQTL/common SNPs) vs predictions (>0.5 as positive):
 
 ||Pred:0|Pred:1|
 |--|--|--|	
-|Obs:0|36163|30574|
-|Obs:1|302|2847|
+|Obs:0|66732|5|
+|Obs:1|3136|13|
+
 
 Feature importance (top 200 shown):
 
@@ -41,11 +42,11 @@ https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.sn
 
 outcome (eQTL/common SNPs) vs predictions (>0.5 as positive):
 
+
 ||Pred:0|Pred:1|
 |--|--|--|	
-|Obs:0|66732|5|
-|Obs:1|3136|13|
-
+|Obs:0|36163|30574|
+|Obs:1|302|2847|
 
 Feature importance (top 200 shown):
 
