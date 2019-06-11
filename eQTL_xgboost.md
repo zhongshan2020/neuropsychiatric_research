@@ -6,7 +6,8 @@ The trian dataset used same as above, briefly, 3,149 eQTL as positive, and 66,73
 
 The xgboost was used for outcome prediction based on features, using the objective method: "binary:logistic" and loss function metrics: "Precison recall auc", 5-fold CV to estimate performance.
 
-Two analysis performed with different instance weight to show whether higher PIP score for eQTLs can indicate more reliable eQTLs:
+
+Two analysis performed with different instance weight to test the hypothesis that:  higher PIP score for eQTLs can indicate more reliable eQTLs:
 
 <h2> a, same instance weight: </h2>
 
@@ -33,7 +34,7 @@ relationship between PIP score vs Prediction probability:
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.pred.pip.cor.pdf
 
 
-<h2> b, PIP score as instance weight for positive (eQTL), and arbitarily chosen 0.01 for negative (common SNPs): </h2>
+<h2> b, PIP score as instance weight for positive (eQTL), and  0.01 for negative (common SNPs): </h2>
 
 AUC curve:
 
