@@ -52,3 +52,13 @@ Feature importance (top 200 shown):
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.snps.anno.matr.instancewt.xgb_train_featureImportance.aucpr.pdf
   
+  
+ <h2> Summary: <\h2>
+
+a, we can discern eQTL from common SNPs using the features via xgboost
+
+b, among the features, RNAsnp and conservation/selection socres, epigenetic predictions using deepSea are top ones
+
+c, unfortunately, higher PIP score doesn't indicate higher functional eQTL
+
+
