@@ -19,7 +19,7 @@ outcome (eQTL/common SNPs) vs predictions (>0.5 as positive):
 |Obs:0|36163|30574|
 |Obs:1|302|2847|
 
-Feature importance:
+Feature importance (top 200 shown):
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/finemap_eQTL_commonSNPs.anno.matr.xgb_train_featureImportance.aucpr.pdf
 
@@ -44,7 +44,7 @@ outcome (eQTL/common SNPs) vs predictions (>0.5 as positive):
 |Obs:1|3136|13|
 
 
-Feature importance:
+Feature importance (top 200 shown):
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.snps.anno.matr.instancewt.xgb_train_featureImportance.aucpr.pdf
   
