@@ -37,6 +37,9 @@ https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.pr
 
 <h2> b, PIP score as instance weight for positive (eQTL), and  0.01 for negative (common SNPs): </h2>
 
+Note: change of the instance weight for negative cases from 0.01 to other affect results drastically.
+
+
 AUC curve:
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.snps.anno.matr.instancewt.xgb_train_AUC.aucpr.pdf
