@@ -6,8 +6,9 @@ The trian dataset used same as above, briefly, 3,149 eQTL as positive, and 66,73
 
 The xgboost was used for outcome prediction based on features, using the objective method: "binary:logistic" and loss function metrics: "Precison recall auc", 5-fold CV to estimate performance.
 
+<h2> Analysis: </h2>
 
-Two analysis performed with different instance weight to test the hypothesis that:  higher PIP score for eQTLs can indicate more reliable eQTLs:
+Two analysis performed with different instance weight to test the hypothesis that:  higher PIP score for eQTLs can indicate more reliable eQTLs
 
 <h2> a, same weight of 1 for all SNPs : </h2>
 
