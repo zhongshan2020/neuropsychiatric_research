@@ -9,7 +9,7 @@ The xgboost was used for outcome prediction based on features, using the objecti
 
 Two analysis performed with different instance weight to test the hypothesis that:  higher PIP score for eQTLs can indicate more reliable eQTLs:
 
-<h2> a, same instance weight: </h2>
+<h2> a, same weight of 1 for all SNPs : </h2>
 
 AUC curve:
 
