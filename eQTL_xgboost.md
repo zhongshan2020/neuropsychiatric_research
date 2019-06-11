@@ -4,7 +4,7 @@
 
 The trian dataset used same as above, briefly, 3,149 eQTL as positive, and 66,737 common SNPs (matched by SNPsnap) as negative, in total 2,934 features (mainly including RBP bidning, miRNA binding) used for training.
 
-The xgboost was used for outcome prediction based on features, using the objective method: "binary:logistic" and loss function metrics: "Precison recall auc", 5-fold CV to estimate performance.
+The xgboost (in R) was used for model construction, using the objective method: "binary:logistic",  loss function metrics: "Precison recall auc", and 5-fold CV for model training and performance estimates.
 
 <h2> Analysis: </h2>
 
