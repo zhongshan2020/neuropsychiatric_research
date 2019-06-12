@@ -32,7 +32,11 @@ https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/finem
 
 relationship between PIP score vs Prediction probability from xgboost :
 
+spearman correlation: 
+
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.pred.pip.cor.pdf
+
+xgboost prediction probability for each PIP score equal bins (1-4 for lower to higher PIP score):
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.pred.pip2boxplot.pdf
 
