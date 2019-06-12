@@ -34,6 +34,9 @@ relationship between PIP score vs Prediction probability from xgboost :
 
 https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.pred.pip.cor.pdf
 
+https://github.com/lalzs1982/neuropsychiatric_research/blob/master/folder1/tt.pred.pip2boxplot.pdf
+
+
 
 <h2> b, PIP score as instance weight for positive (eQTL), and  0.01 for negative (common SNPs): </h2>
 
